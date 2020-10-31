@@ -52,13 +52,24 @@
     opacity: 1;
 }
 
+.header__navigation{
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+}
+
 .header__link
 {
-    margin-left: auto;
-
+    display: flex;
+    
     transition: opacity .2s;
 
     opacity: .3;
+    padding: 0 5px;
+    color: #000000;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-decoration: none;
 }
 
 .header__link:hover
@@ -68,17 +79,15 @@
     opacity: 1;
 }
 
-.header__social-icon
+.header__icon
 {
-    display: block;
-
     width: 25px;
     height: 25px;
 
     background-size: cover;
 }
 
-.header__social-icon_icon_telegram
+.header__icon_icon_telegram
 {
     background-image: url('../images/icons/icon_telegram.svg');
 }
@@ -430,14 +439,18 @@
 .products
 {
     display: grid;
+    align-content: start;
 
     grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
 }
 
 .product
 {
+    display: grid;
+    grid-template-rows: 1fr min-content;
     margin: 0 0 -1px -1px;
     padding: 25px;
+    align-items: center;
 
     transition: box-shadow .3s;
 
@@ -461,6 +474,7 @@
 .product__info
 {
     display: grid;
+    margin-top: auto;
 
     padding-top: 25px;
 }
@@ -483,7 +497,7 @@
 {
     font-size: 16px;
     font-weight: 600;
-    line-height: 24px;
+    line-height: 26px;
 
     overflow: hidden;
 

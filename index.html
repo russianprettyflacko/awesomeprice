@@ -11,9 +11,11 @@
 <body class="page">
     <header class="header">
         <h1 class="header__logotype">Awesomeprice</h1>
-        <a href="https://t.me/awesomeprice" class="header__link">
-            <i class="header__social-icon header__social-icon_icon_telegram"></i>
-        </a>
+        <nav class="header__navigation">
+            <a href="https://t.me/awesomeprice" class="header__link">
+                <i class="header__icon header__icon_icon_telegram"></i>
+            </a>
+        </nav>
     </header>
     <nav class="navigation">
         <ul class="navigation__elements">
@@ -145,62 +147,152 @@
                     </ul>
                 </li>
             </ul>
+            <ul class="filter">
+                <li class="filter__title">Пол</li>
+                <li>
+                    <ul class="filter__checkboxes filter__checkboxes_gender" id="filter__gender">
+                        <li class="filter__checkbox">Мужчинам</li>
+                        <li class="filter__checkbox">Женщинам</li>
+                    </ul>
+                </li>
+            </ul>
         </aside>
         <!-- /FILTER -->
 
         <!-- PRODUCTS -->
         <section class="products">
             <figure class="product">
-                <img src="./images/products/air-force.jpg" alt="" class="product__cover">
+                <img src="./images/products/20-08-2020_CJ0693-002_2_1.jpg" alt="" class="product__cover">
                 <figcaption class="product__info">
                     <span class="product__brand">Nike</span>
-                    <span class="product__model">Air Force 1</span>
+                    <span class="product__model">OFFLINE</span>
+                    <span class="product__color">BLACK, MENTA, WHITE & ORANGE</span>
+                    <span class="product__price">9999</span>
+                </figcaption>
+            </figure>
+            <figure class="product">
+                <img src="./images/products/27-10-2020_SI_FZ5456_2_1.jpg" alt="" class="product__cover">
+                <figcaption class="product__info">
+                    <span class="product__brand">ADIDAS X IVY PARK</span>
+                    <span class="product__model">ULTRA BOOST OG</span>
+                    <span class="product__color">YELLOW & GUM</span>
+                    <span class="product__price">9999</span>
+                </figcaption>
+            </figure>
+            <figure class="product">
+                <img src="./images/products/28-10-2019_nike_airforce107w_white_315115-112_mb_2.jpg" alt="" class="product__cover">
+                <figcaption class="product__info">
+                    <span class="product__brand">Nike</span>
+                    <span class="product__model">AIR FORCE 1 '07 W</span>
                     <span class="product__color">White</span>
                     <span class="product__price">9999</span>
                 </figcaption>
             </figure>
             <figure class="product">
-                <img src="./images/products/air-force.jpg" alt="" class="product__cover">
+                <img src="./images/products/29-10-2020_SI_DB5453-700_2_1.jpg" alt="" class="product__cover">
+                <figcaption class="product__info">
+                    <span class="product__brand">Nike X AIR JORDAN</span>
+                    <span class="product__model">1 MID SE</span>
+                    <span class="product__color">DESERT OCHRE & BLACK</span>
+                    <span class="product__price">9999</span>
+                </figcaption>
+            </figure>
+            <figure class="product">
+                <img src="./images/products/Nike-Air-Max-95.jpg" alt="" class="product__cover">
                 <figcaption class="product__info">
                     <span class="product__brand">Nike</span>
-                    <span class="product__model">Air Force 1</span>
+                    <span class="product__model">AIR MAX 95 ESSENTIAL</span>
+                    <span class="product__color">WHITE & BLACK</span>
+                    <span class="product__price">9999</span>
+                </figcaption>
+            </figure>
+            <figure class="product">
+                <img src="./images/products/20-08-2020_CJ0693-002_2_1.jpg" alt="" class="product__cover">
+                <figcaption class="product__info">
+                    <span class="product__brand">Nike</span>
+                    <span class="product__model">OFFLINE</span>
+                    <span class="product__color">BLACK, MENTA, WHITE & ORANGE</span>
+                    <span class="product__price">9999</span>
+                </figcaption>
+            </figure>
+            <figure class="product">
+                <img src="./images/products/27-10-2020_SI_FZ5456_2_1.jpg" alt="" class="product__cover">
+                <figcaption class="product__info">
+                    <span class="product__brand">ADIDAS X IVY PARK</span>
+                    <span class="product__model">ULTRA BOOST OG</span>
+                    <span class="product__color">YELLOW & GUM</span>
+                    <span class="product__price">9999</span>
+                </figcaption>
+            </figure>
+            <figure class="product">
+                <img src="./images/products/28-10-2019_nike_airforce107w_white_315115-112_mb_2.jpg" alt="" class="product__cover">
+                <figcaption class="product__info">
+                    <span class="product__brand">Nike</span>
+                    <span class="product__model">AIR FORCE 1 '07 W</span>
                     <span class="product__color">White</span>
                     <span class="product__price">9999</span>
                 </figcaption>
             </figure>
             <figure class="product">
-                <img src="./images/products/air-force.jpg" alt="" class="product__cover">
+                <img src="./images/products/29-10-2020_SI_DB5453-700_2_1.jpg" alt="" class="product__cover">
+                <figcaption class="product__info">
+                    <span class="product__brand">Nike X AIR JORDAN</span>
+                    <span class="product__model">1 MID SE</span>
+                    <span class="product__color">DESERT OCHRE & BLACK</span>
+                    <span class="product__price">9999</span>
+                </figcaption>
+            </figure>
+            <figure class="product">
+                <img src="./images/products/Nike-Air-Max-95.jpg" alt="" class="product__cover">
                 <figcaption class="product__info">
                     <span class="product__brand">Nike</span>
-                    <span class="product__model">Air Force 1</span>
+                    <span class="product__model">AIR MAX 95 ESSENTIAL</span>
+                    <span class="product__color">WHITE & BLACK</span>
+                    <span class="product__price">9999</span>
+                </figcaption>
+            </figure>
+            <figure class="product">
+                <img src="./images/products/20-08-2020_CJ0693-002_2_1.jpg" alt="" class="product__cover">
+                <figcaption class="product__info">
+                    <span class="product__brand">Nike</span>
+                    <span class="product__model">OFFLINE</span>
+                    <span class="product__color">BLACK, MENTA, WHITE & ORANGE</span>
+                    <span class="product__price">9999</span>
+                </figcaption>
+            </figure>
+            <figure class="product">
+                <img src="./images/products/27-10-2020_SI_FZ5456_2_1.jpg" alt="" class="product__cover">
+                <figcaption class="product__info">
+                    <span class="product__brand">ADIDAS X IVY PARK</span>
+                    <span class="product__model">ULTRA BOOST OG</span>
+                    <span class="product__color">YELLOW & GUM</span>
+                    <span class="product__price">9999</span>
+                </figcaption>
+            </figure>
+            <figure class="product">
+                <img src="./images/products/28-10-2019_nike_airforce107w_white_315115-112_mb_2.jpg" alt="" class="product__cover">
+                <figcaption class="product__info">
+                    <span class="product__brand">Nike</span>
+                    <span class="product__model">AIR FORCE 1 '07 W</span>
                     <span class="product__color">White</span>
                     <span class="product__price">9999</span>
                 </figcaption>
             </figure>
             <figure class="product">
-                <img src="./images/products/air-force.jpg" alt="" class="product__cover">
+                <img src="./images/products/29-10-2020_SI_DB5453-700_2_1.jpg" alt="" class="product__cover">
                 <figcaption class="product__info">
-                    <span class="product__brand">Nike</span>
-                    <span class="product__model">Air Force 1</span>
-                    <span class="product__color">White</span>
+                    <span class="product__brand">Nike X AIR JORDAN</span>
+                    <span class="product__model">1 MID SE</span>
+                    <span class="product__color">DESERT OCHRE & BLACK</span>
                     <span class="product__price">9999</span>
                 </figcaption>
             </figure>
             <figure class="product">
-                <img src="./images/products/air-force.jpg" alt="" class="product__cover">
+                <img src="./images/products/Nike-Air-Max-95.jpg" alt="" class="product__cover">
                 <figcaption class="product__info">
                     <span class="product__brand">Nike</span>
-                    <span class="product__model">Air Force 1</span>
-                    <span class="product__color">White</span>
-                    <span class="product__price">9999</span>
-                </figcaption>
-            </figure>
-            <figure class="product">
-                <img src="./images/products/air-force.jpg" alt="" class="product__cover">
-                <figcaption class="product__info">
-                    <span class="product__brand">Nike</span>
-                    <span class="product__model">Air Force 1</span>
-                    <span class="product__color">White</span>
+                    <span class="product__model">AIR MAX 95 ESSENTIAL</span>
+                    <span class="product__color">WHITE & BLACK</span>
                     <span class="product__price">9999</span>
                 </figcaption>
             </figure>
